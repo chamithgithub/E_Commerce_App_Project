@@ -1,15 +1,9 @@
-import Body from "./component/body/Body"
-import Footer from "./component/footer/Footer"
-import Header from "./component/header/Header"
+import AppRouter from "./routers/AppRouter";
+
 
 function App () {
-  return (
-    <div className=" w-full h-screen">
-      <Header />
-      <Body />
-      <Footer />
-    </div>
-  )
+  return <AppRouter />
+  
 }
 
-export default App
+export default App;
