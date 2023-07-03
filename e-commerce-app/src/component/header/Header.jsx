@@ -20,7 +20,7 @@ const Header = () => {
        </div>
        </div>
       {/* header right*/}
-      <IconButton><ShoppingCartOutlinedIcon /></IconButton>
+      <IconButton><ShoppingCartOutlinedIcon sx={{color:'red',}} /></IconButton>
       
     </header>;
 };
