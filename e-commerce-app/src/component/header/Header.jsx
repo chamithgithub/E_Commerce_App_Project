@@ -15,8 +15,8 @@ const Header = () => {
           </IconButton>
         <h1 className="ml-2 text-sm font-semibold">Chamith <span className="text-[#ff2727]">Dev</span></h1>   
        <div className="overflow-hidden ml-2 flex items-center rounded-full bg-[#e6dfd7]">
-        <input type="text" placeholder="Search" className="outline-none ml-1 p-2 w-[200px] bg-inherit font-semibold text-sm"/>
-        <SearchIcon className="text-gray-400"/>
+        <input type="text" placeholder="Search" className="hidden sm:inline-block outline-none ml-1 p-2 w-[200px] bg-inherit font-semibold text-sm"/>
+        <IconButton><SearchIcon className="text-gray-400"/> </IconButton>
        </div>
        </div>
       {/* header right*/}
