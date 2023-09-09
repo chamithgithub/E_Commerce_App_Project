@@ -1,16 +1,18 @@
-import React from 'react'
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Product from "./Product";
 
-const Product = ({title}) => {
+const Product = ({ title, rowsCount }) => {
   return (
     <section>
       <h1>{title}</h1>
       <Swiper
         slidesPerView={3}
         grid={{
-          rows: 2,
+          rows: Number(rowsCount),
         }}
         spaceBetween={30}
-        pagination={{
+        Pagination={{
           clickable: true,
         }}
         modules={[Grid, Pagination]}
@@ -27,7 +29,19 @@ const Product = ({title}) => {
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
     </section>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
+
+const ProductUnit = ({ imageUrl, price, productTitle, id }) => (
+  <div className="w-full">
+    <img
+      src={imageUrl}
+      alt={`product_unit_${id}`}
+      className="w-full object-contain"
+    />
+    <h3>{productTitle}</h3>
+    <h3>{price}</h3>
+  </div>
+);
